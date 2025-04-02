@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/ddg"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity">
@@ -12,8 +13,8 @@
 
     <TextView
         android:id="@+id/titleText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
         android:layout_marginTop="28dp"
         android:text="Meal Suggestion App"
         android:textColor="@color/black"
@@ -56,7 +57,7 @@
         android:layout_marginTop="64dp"
         android:text=""
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="26sp" />
 
     <Button

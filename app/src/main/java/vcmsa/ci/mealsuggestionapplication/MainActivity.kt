@@ -72,28 +72,22 @@ class MainActivity : AppCompatActivity() {
                 when (time) {
 
 
-                    in 0..4 -> resultText?.text =
-                        "Late night/Early morning suggestion: Herbal tea or water"
-
-                    in 5..9 -> resultText?.text =
-                        "Breakfast suggestion: Oatmeal with fruits and nuts"
-
-                    in 10..11 -> resultText?.text =
-                        "Mid-morning snack suggestion: Greek yogurt with honey"
+                    in 6..11 -> resultText?.text =
+                        "Late night/Early morning suggestion: Herbal tea or water" +
+                                "Oatmeal with fruits and nuts"
 
                     in 12..14 -> resultText?.text =
-                        "Lunch suggestion: Grilled chicken salad with avocado"
+                        "lunch suggestion:chicken salad with avocado"
 
                     in 15..17 -> resultText?.text =
-                        "Afternoon snack suggestion: Hummus with vegetable sticks"
+                        "Mid-afternoon snack suggestion: Greek yogurt with honey"
 
-                    in 18..20 -> resultText?.text =
-                        "Dinner suggestion: Baked salmon with roasted vegetables"
+                    in 17..21 -> resultText?.text =
+                        "dinner suggestion:Grilled salmon with roasted vegetables  "
 
-                    in 21..22 -> resultText?.text =
-                        "Evening snack suggestion: A small bowl of mixed berries"
+                    in 22..23 -> resultText?.text =
+                        "Late night snack suggestion: Mixed fruit bowl"
 
-                    in 23..23 -> resultText?.text = "Late night suggestion: Herbal tea or water"
 
                     else -> {
                         resultText?.text = "No meals served at this time of day!"
