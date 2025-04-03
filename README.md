@@ -1,1 +1,63 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/kIM4zJRU)
+ Meal Suggestion Application
+
+Overview
+
+My App provides meal suggestions based on the time of day entered by the user. It helps users decide what to eat at different times.
+
+Functions
+
+*   **Time Input:** The user enters the current time (as an integer).
+*   **Meal Suggestion:** The app suggests a meal appropriate for the given time.
+*   **Clear Button:** Clears the input field and the suggestion text.
+*   **Exit Button:** Closes the application.
+
+ How to Use
+
+1.  **Enter the Time:** Input the current time as a whole number (e.g., 12 for 12:00, 18 for 18:00).
+2.  **Tap 'Suggest':** Press the "Suggest" button to get a meal suggestion.
+3.  **View Suggestion:** The suggested meal will appear in the text view.
+4.  **Clear or Exit:** Use the "Clear" button to clear the time and suggestion, or the "Exit" button to close the app.
+
+ Code Explanation
+
+The `MainActivity` class contains the application logic.
+
+*   `onCreate()`: Initializes the UI components (buttons, input field, text view) and sets up click listeners.
+*   `suggestionMeal()`: This function takes the time entered by the user and provides meal suggestions based on the time.
+*   `isNotEmpty()`: This function validates the time entered by the user and makes sure that the time is not empty and a valid integer.
+*   `btnExit`: Exits the app.
+*   `btnClear`: clears the input and output text.
+
+ Meal Suggestions
+
+The app provides the following meal suggestions:
+
+*   **6-11:** Late night/Early morning suggestion: Herbal tea or water, Oatmeal with fruits and nuts
+*   **12-14:** Lunch suggestion: Chicken salad with avocado
+*   **15-17:** Mid-afternoon snack suggestion: Greek yogurt with honey
+*   **17-21:** Dinner suggestion: Grilled salmon with roasted vegetables
+*   **22-23:** Late night snack suggestion: Mixed fruit bowl
+*   **Other times:** No meals recommended at this time of day!
+
+ Dependencies
+
+This app uses the following Android libraries:
+
+*   `androidx.appcompat.app.AppCompatActivity`
+*   `androidx.core.view.ViewCompat`
+*   `androidx.core.view.WindowInsetsCompat`
+
+Layout
+
+The layout file (`activity_main.xml`) defines the user interface, including the `EditText` for time input, `TextView` for displaying the meal suggestion, and `Button` elements for actions.
+
+ Additional Notes
+
+*   Error handling is included to manage invalid time inputs.
+*   The app uses `kotlin.system.exitProcess` to exit the application.
+
+  Screenshots
+
+  ![image](https://github.com/user-attachments/assets/e073ccad-9daa-49e2-b8bf-17c29cc29648)
+  ![image](https://github.com/user-attachments/assets/44104d76-f73b-4b1b-bf51-5798eb120428)
+
