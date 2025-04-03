@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
     private var timeInput: EditText? = null
     private var resultText: TextView? = null
 
+    //youtube video from CodeMonkey
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -45,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
+// generates random meals depending on the time of the day
     private fun isNotEmpty(): Boolean {
         var b = true
         val timeText = timeInput?.text.toString().trim()
@@ -56,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             val time = timeText.toIntOrNull()
             if (time == null) {
-                timeInput?.error = "Invalid input. Please enter a valid number."
+                timeInput?.error = "Invalid input. Please enter a valid time."
                 b = false
             }
         }
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 
 
                     in 6..11 -> resultText?.text =
-                        "Late night/Early morning suggestion: Herbal tea or water" +
+                        "Early morning suggestion: Herbal tea or water" +
                                 "Oatmeal with fruits and nuts"
 
                     in 12..14 -> resultText?.text =
@@ -90,7 +91,7 @@ class MainActivity : AppCompatActivity() {
 
 
                     else -> {
-                        resultText?.text = "No meals served at this time of day!"
+                        resultText?.text = "No meals recommended at this time of day!"
                     }
                 }
             }
