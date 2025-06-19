@@ -1,63 +1,28 @@
- Meal Suggestion Application
-
+Playlist Manager
 Overview
-
-My App provides meal suggestions based on the time of day entered by the user. It helps users decide what to eat at different times.
-
+My App is used to help user create and manage playlists according to which artist they like and the songs by the artistt they pick
 Functions
+•	Song Title The user enters the name of the song they are looking for
+•	Artist Name: the user inserts the name of the artist.
+•	The rating: there are numbers 1-5 which user has to pick from to rate
+•	Add to Playlist Button: Adds the song to playlistt after inserting details
+•	Next Button: takes user to the next screen
+•	Exit Btton: allows user to leave the app
+How to Use
+1.	Enter Song Title The user enters the name of the song they are looking for
+2.	Enter Artist Name: the user inserts the name of the artist.
+3.	Rate out of 5: there are numbers 1-5 which user has to pick from to rate
+4.	Click Add to Playlist Button: Adds the song to playlistt after inserting details
+5.	Click Next Button: if you are ready to go to the next screen
+6.	Click Exit Btton: if you wish to leave the app to leave the app Code Explanation
+The MainActivity class contains the application logic.
+screenshots of code
 
-*   **Time Input:** The user enters the current time (as an integer).
-*   **Meal Suggestion:** The app suggests a meal appropriate for the given time.
-*   **Clear Button:** Clears the input field and the suggestion text.
-*   **Exit Button:** Closes the application.
+screenshoots :
+Activity Main
+ 
+Main Activity Kt
+ 
 
- How to Use
-
-1.  **Enter the Time:** Input the current time as a whole number (e.g., 12 for 12:00, 18 for 18:00).
-2.  **Tap 'Suggest':** Press the "Suggest" button to get a meal suggestion.
-3.  **View Suggestion:** The suggested meal will appear in the text view.
-4.  **Clear or Exit:** Use the "Clear" button to clear the time and suggestion, or the "Exit" button to close the app.
-
- Code Explanation
-
-The `MainActivity` class contains the application logic.
-
-*   `onCreate()`: Initializes the UI components (buttons, input field, text view) and sets up click listeners.
-*   `suggestionMeal()`: This function takes the time entered by the user and provides meal suggestions based on the time.
-*   `isNotEmpty()`: This function validates the time entered by the user and makes sure that the time is not empty and a valid integer.
-*   `btnExit`: Exits the app.
-*   `btnClear`: clears the input and output text.
-
- Meal Suggestions
-
-The app provides the following meal suggestions:
-
-*   **6-11:** Late night/Early morning suggestion: Herbal tea or water, Oatmeal with fruits and nuts
-*   **12-14:** Lunch suggestion: Chicken salad with avocado
-*   **15-17:** Mid-afternoon snack suggestion: Greek yogurt with honey
-*   **17-21:** Dinner suggestion: Grilled salmon with roasted vegetables
-*   **22-23:** Late night snack suggestion: Mixed fruit bowl
-*   **Other times:** No meals recommended at this time of day!
-
- Dependencies
-
-This app uses the following Android libraries:
-
-*   `androidx.appcompat.app.AppCompatActivity`
-*   `androidx.core.view.ViewCompat`
-*   `androidx.core.view.WindowInsetsCompat`
-
-Layout
-
-The layout file (`activity_main.xml`) defines the user interface, including the `EditText` for time input, `TextView` for displaying the meal suggestion, and `Button` elements for actions.
-
- Additional Notes
-
-*   Error handling is included to manage invalid time inputs.
-*   The app uses `kotlin.system.exitProcess` to exit the application.
-
-  Screenshots
-
-  ![image](https://github.com/user-attachments/assets/e073ccad-9daa-49e2-b8bf-17c29cc29648)
-  ![image](https://github.com/user-attachments/assets/44104d76-f73b-4b1b-bf51-5798eb120428)
-
+GitHub Link
+https://github.com/VCSTDN2024/imad5112-assignment-1-OluhleKheswa.git
